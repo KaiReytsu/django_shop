@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Покупки</title>
+    {% load static %}
+
+    <script src = "{% static 'goods_js.js' %}"></script>
+</head>
+<body>
+    <h1>Покупки</h1>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

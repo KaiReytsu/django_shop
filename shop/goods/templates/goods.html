@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Список продуктов</title>
+    {% load static %}
+
+    <script src = "{% static 'goods_js.js' %}"></script>
+</head>
+<body>
+    <h1>Список продуктов</h1>
+    <form action="/" method="post">
+    {% csrf_token %}
+    <p>
+        Введите наименование товара и цену:
+        <input type="text" placeholder="Компьютер" name="product"/>
+        <input type="text" placeholder="21500" name="price"/> руб.
+    </p>
+    <p>
+        Количество данного товара в магазине
+        <input type="number" placeholder="55" name="amountgoods" > условных единиц
+    </p>
+    <input type="submit" value="Сохранить" />
+    <input 
+    type="button" 
+    value="Сохранение (js)" 
+    onclick="savefunc()" />
+    </form>
+    <a href="{% url 'purchase'%}"> Перейти к покупкам </a>
+    
+</body>
+</html>
