@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+uvicorn = "*"
+gunicorn = "*"
+django-q = "*"
 
 [dev-packages]
 
