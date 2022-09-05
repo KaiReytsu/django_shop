@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Список продуктов</title>
     {% load static %}
-
     <script src = "{% static 'goods_js.js' %}"></script>
+    
 </head>
 <body>
     <h1>Список продуктов</h1>
@@ -27,6 +27,10 @@
     onclick="savefunc()" />
     </form>
     <a href="{% url 'purchase'%}"> Перейти к покупкам </a>
-    
+    <div id="root">
+    </div>
+        <script defer="defer" src="/static/js/main.5d0d996a.js">
+        </script>
+        <link href="/static/css/main.073c9b0a.css" rel="stylesheet">
 </body>
 </html>

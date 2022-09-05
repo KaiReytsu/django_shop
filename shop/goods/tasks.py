@@ -5,7 +5,6 @@ from time import sleep
 def send_log_to_email():
     with open ('shop/loggingfile.log', 'r') as file:
         logfile = file.read()
-    print(logfile)
     send_mail(
             subject='Logging file',                      
             message=logfile,                         
