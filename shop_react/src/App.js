@@ -1,13 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from './user.png';
+import './style.css';
+import LoginForm from "./components/LoginForm/LoginForm";
+import Tableau from "./components/Tableau/Tableau";
 
-function App() {
+export default class App extends React.Component {
+  render () {
   return (
-    <div className="App">
-        <h1>Библиотека</h1>
-        <p>На сайте можно забронировать книгу, которую Вы сможете забрать из библиотеки</p>
-    </div>
+      <div id="formContent">
+          <div className="fadeIn first">      
+          <img src={logo} className="reg_login" alt="logo"/>
+          </div>
+          <LoginForm/>
+          <div id="formFooter">
+            <p className="underlineHover">Регистрация / Список книг</p><br/>
+            <Tableau/>
+          </div>
+        </div>
   );
-}
-
-export default App;
+}}
