@@ -1,5 +1,7 @@
 shop/shop/secretkey.py
 shop/shop/mypass.py
+shop_react/src/example.App.js
+shop_react/src/login.App.js
 __pycache__/
 *.txt
 shop/db.sqlite3
@@ -7,3 +9,4 @@ shop/db.sqlite3
 *.jpg
 *.log
 *.png
+example.html
